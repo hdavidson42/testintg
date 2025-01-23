@@ -20,6 +20,7 @@ perk = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/glob
 
 def create_db_connection_string(db_username, db_password, db_host, db_port, db_name):
     connection_url = 'postgresql+psycopg2://'+ db_username + ':' + db_password + '@' + db_host + ':' + db_port +'/' + db_name
+    print(connection_url)
     return connection_url
 
 @st.cache_data
